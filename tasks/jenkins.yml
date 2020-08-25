@@ -1,9 +1,9 @@
 ---
-    -   name: Set Up manager
-        hosts: manager
-        remote_user: root
-        roles:
-            - swap
-            - docker
-            - certbot
-            - jenkins
+-   name: Set Up manager
+    hosts: manager
+    remote_user: root
+    roles:
+        - ../roles/swap
+        - ../roles/docker
+        - ../roles/certbot
+        - ../roles/jenkins

@@ -1,0 +1,5 @@
+certbot_email: example@mail.com
+certbot_hosts:
+    - sub1.domain.com
+    - sub2.domain.com
+    - sub3.domain.com
