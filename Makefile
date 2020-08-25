@@ -4,6 +4,9 @@ site-v:
 site:
 	ansible-playbook -i hosts.yml tasks/site.yml
 
+jenkins:
+	ansible-playbook -i hosts.yml tasks/jenkins.yml
+
 upgrade:
 	ansible-playbook -i hosts.yml tasks/upgrade.yml
 
