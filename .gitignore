@@ -1,2 +1,2 @@
 /hosts.yml
-/**/defaults/main.yml
+/roles/site/defaults/main.yml
