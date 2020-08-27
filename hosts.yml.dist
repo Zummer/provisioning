@@ -2,23 +2,23 @@ all:
     children:
         site:
             hosts:
-                server:
+                site-1:
                     ansible_connection: ssh
                     ansible_user: root
                     ansible_host: 0.0.0.0
                     ansible_port: 22
                     ansible_python_interpreter: /usr/bin/python3
-        manager:
+        jenkins_manager:
             hosts:
-                server:
+                jenkins-manager-1:
                     ansible_connection: ssh
                     ansible_user: root
                     ansible_host: 0.0.0.0
                     ansible_port: 22
                     ansible_python_interpreter: /usr/bin/python3
-        agent:
+        jenkins_agent:
             hosts:
-                agent-1:
+                jenkins-agent-1:
                     ansible_connection: ssh
                     ansible_user: root
                     ansible_host: 0.0.0.1
