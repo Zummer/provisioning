@@ -1,9 +1,0 @@
----
--   name: Set Up jenkins agent
-    hosts: jenkins_agent
-    remote_user: root
-    roles:
-        - ../roles/swap
-        - ../roles/docker
-        - ../roles/java
-        - ../roles/jenkins-agent

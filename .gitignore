@@ -1,3 +1,4 @@
 /hosts.yml
 /roles/site/defaults/main.yml
 /roles/jenkins-manager/defaults/main.yml
+/roles/registry/defaults/main.yml

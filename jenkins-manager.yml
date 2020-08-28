@@ -1,0 +1,9 @@
+---
+-   name: Set Up jenkins-manager
+    hosts: jenkins_manager
+    remote_user: root
+    roles:
+        - swap
+        - docker
+        - certbot
+        - jenkins-manager

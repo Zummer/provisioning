@@ -1,0 +1,10 @@
+---
+-   name: Provision Registry
+    hosts: registry
+    remote_user: root
+    roles:
+        - swap
+        - docker
+        - certbot
+        - registry
+    

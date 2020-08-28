@@ -1,32 +1,35 @@
 site-v:
-	ansible-playbook -i hosts.yml tasks/site.yml -v
+	ansible-playbook -i hosts.yml site.yml -v
 
 site:
-	ansible-playbook -i hosts.yml tasks/site.yml
+	ansible-playbook -i hosts.yml site.yml
+
+registry:
+	ansible-playbook -i hosts.yml registry.yml
 
 jenkins-manager:
-	ansible-playbook -i hosts.yml tasks/jenkins-manager.yml
+	ansible-playbook -i hosts.yml jenkins-manager.yml
 
 jenkins-agent:
-	ansible-playbook -i hosts.yml tasks/jenkins-agent.yml
+	ansible-playbook -i hosts.yml jenkins-agent.yml
 
 upgrade:
-	ansible-playbook -i hosts.yml tasks/upgrade.yml
+	ansible-playbook -i hosts.yml upgrade.yml
 
 renew-certificates:
-	ansible-playbook -i hosts.yml tasks/renew-certificates.yml
+	ansible-playbook -i hosts.yml renew-certificates.yml
 
 authorize:
-	ansible-playbook -i hosts.yml tasks/authorize.yml
+	ansible-playbook -i hosts.yml authorize.yml
 
 generate-agent-key:
 	ssh-keygen -q -t rsa -N '' -f files/agent_rsa
 
 authorize-jenkins-agent:
-	ansible-playbook -i hosts.yml tasks/authorize-jenkins-agent.yml
+	ansible-playbook -i hosts.yml authorize-jenkins-agent.yml
 
 docker-login:
-	ansible-playbook -i hosts.yml tasks/docker-login.yml
+	ansible-playbook -i hosts.yml docker-login.yml
 
 ping:
 	ansible all -m ping -i hosts.yml
