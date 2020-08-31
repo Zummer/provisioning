@@ -28,6 +28,12 @@ generate-agent-key:
 authorize-jenkins-agent:
 	ansible-playbook -i hosts.yml authorize-jenkins-agent.yml
 
+generate-deploy-key:
+	ssh-keygen -q -t rsa -N '' -f files/deploy_rsa
+
+authorize-deploy:
+	ansible-playbook -i hosts.yml authorize-deploy.yml
+
 docker-login:
 	ansible-playbook -i hosts.yml docker-login.yml
 
