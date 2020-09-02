@@ -7,15 +7,13 @@ all:
                     ansible_user: root
                     ansible_host: 0.0.0.0
                     ansible_port: 22
-                    ansible_python_interpreter: /usr/bin/python3
-        site:
+        site_swarm_manager:
             hosts:
-                site-1:
+                site_swarm_manager-rfr-1:
                     ansible_connection: ssh
                     ansible_user: root
                     ansible_host: 0.0.0.0
                     ansible_port: 22
-                    ansible_python_interpreter: /usr/bin/python3
         jenkins_manager:
             hosts:
                 jenkins-manager-1:
@@ -23,7 +21,6 @@ all:
                     ansible_user: root
                     ansible_host: 0.0.0.0
                     ansible_port: 22
-                    ansible_python_interpreter: /usr/bin/python3
         jenkins_agent:
             hosts:
                 jenkins-agent-1:
@@ -31,4 +28,3 @@ all:
                     ansible_user: root
                     ansible_host: 0.0.0.1
                     ansible_port: 22
-                    ansible_python_interpreter: /usr/bin/python3

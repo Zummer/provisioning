@@ -1,6 +1,6 @@
 ---
 -   name: Add authorized key
-    hosts: site:jenkins_manager:registry
+    hosts: site_swarm_manager:jenkins_manager:registry
     remote_user: root
     tasks:
         -   name: Add user authorized key

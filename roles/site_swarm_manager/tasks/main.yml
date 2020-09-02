@@ -1,3 +1,4 @@
 -   import_tasks: ../../common/tasks/generate_certificates.yml
 -   import_tasks: ../../common/tasks/create_user.yml
+-   import_tasks: ../../common/tasks/init_swarm.yml
 -   import_tasks: ../../common/tasks/add_certbot_hook.yml
